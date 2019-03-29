@@ -23,8 +23,6 @@ import csv
 
 csvpath = os.path.join('PyBank','budget_data.csv')
 
-#rand_list = []
-
 with open(csvpath, newline='') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader)
