@@ -31,7 +31,7 @@ with open(csvpath, newline='') as csvfile:
     total = 0
     for row in csvreader:
         #print(csvreader)
-        total = int(row[1]) -total
+        total = int(row[1]) + total
 
     print(total)
 
