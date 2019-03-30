@@ -31,7 +31,7 @@ with open(csvpath, newline='') as csvfile:
         #print(csvreader)
         total = int(row[1]) + total
 
-    print(total)
+    print(f"Total:",total)
 
 #---------------------------------------------------------------------------------------------
 #3
@@ -55,7 +55,7 @@ with open(csvpath, newline='') as csvfile:
         rand_list.append(int(row[1]))
         max_num = max(rand_list)
 
-    print(max_num)
+    print(f"Greatest Increase In Profits:",max_num)
 
 #------------------------------------------------------------------------------------------------
 import os
@@ -74,4 +74,4 @@ with open(csvpath, newline='') as csvfile:
         rand_list.append(int(row[1]))
         min_num = min(rand_list)
 
-    print(min_num)
+    print(f"Greatest Decrease In Profits:",min_num)
