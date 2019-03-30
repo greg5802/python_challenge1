@@ -49,3 +49,11 @@ with open(csvpath, newline='') as csvfile:
     print(f"Correy:",round((count_correy/total_vote)*100,4),"%","("+str(count_correy)+")")
     print(f"Khan:",round((count_khan/total_vote)*100,4),"%","("+str(count_khan)+")")
     print(f"O'Tooley:",round((count_otooley/total_vote)*100,4),"%","("+str(count_otooley)+")")
+    
+winner_list = []
+
+winner_list.append(count_khan)
+winner_list.append(count_correy)
+winner_list.append(count_li)
+winner_list.append(count_otooley)
+print(f"Winner is: Khan with ",max(winner_list),"votes")
